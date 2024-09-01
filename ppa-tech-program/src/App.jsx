@@ -10,6 +10,7 @@ import OutlineCard from './components/OutlineCard/OutlineCard';
 import HowItWorks from './components/HowItWorks/HowItWorks';
 import CourseCurriculum from './components/CourseCurriculum/CourseCurriculum';
 import ProjectsCards from './components/ProjectsCards/ProjectsCards';
+import PricingCard from './components/PricingCard/PricingCard';
 
 function App() {
   const settings = {
@@ -19,6 +20,7 @@ function App() {
     slidesToShow: 4,
     slidesToScroll: 1
   };
+
   const FeatureCards=[
     {
       "id":1,
@@ -109,6 +111,31 @@ function App() {
       "tags":["Web Devlopment","Cloud Computing","Microservice Architecture"]
     }
   ];
+
+  const PricingPlans=[
+    {
+      "id":1,
+      "plantag":"Basic",
+      "trainingduration":"6 Weeks Training",
+      "trainingprice":"Rs 24,999",
+      "features":"Features"
+    },
+    {
+      "id":2,
+      "plantag":"Pro",
+      "trainingduration":"12 Weeks Training",
+      "trainingprice":"Rs 39,999",
+      "features":"Features include in basic, plus"
+    },
+    {
+      "id":3,
+      "plantag":"Premium",
+      "trainingduration":"24 Weeks Training",
+      "trainingprice":"Rs 59,999",
+      "features":"Features include in pro, plus"
+    }
+  ];
+
   return (
     <div className="App">
       <div className="tech-fellowship-banner-container">
@@ -173,6 +200,22 @@ function App() {
           }
         </div>
         <button className="apply-now-btn">Apply Now</button>
+      </div>
+      <div className="pricing-plan-section">
+        <h2 className="pricing-plan-heading">Pricing Plans</h2>
+        <div className="pricing-plan-card-section">
+          {
+            PricingPlans.map((pricingplan)=>(
+              <PricingCard
+              key={pricingplan.id}
+              plantag={pricingplan.plantag}
+              trainingduration={pricingplan.trainingduration}
+              trainingprice={pricingplan.trainingprice}
+              features={pricingplan.features}
+              />
+            ))
+          }
+        </div>
       </div>
     </div>
   )

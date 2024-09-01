@@ -1,0 +1,81 @@
+.pricing-plan-card{
+    width: 421px;
+    padding: 24px;
+    border-radius: 20px;
+    border: 1px solid #E2E8F0;
+    background: #FFFFFF;
+}
+.pricing-plan-tag{
+    display: inline-block;
+    width: 132px;
+    padding: 8px 32px 8px 32px;
+    border-radius: 30px;
+    border: 1px solid #D97706;
+    color: #D97706;
+    background: #FEF3C7;
+    text-align: center;
+}
+.training-duration{
+    /* //styleName: Heading/H3/Bold; */
+    font-family: Gilroy-Bold;
+    margin-top: 32px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.04em;
+    text-align: left;
+}
+.training-desc{
+    /* //styleName: Paragraph/P2/Regular; */
+    margin-top: 8px;
+    font-family: Gilroy-Regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+.training-price{
+    margin-top: 32px;
+    margin-bottom: 32px;
+    /* //styleName: Heading/H3/Bold; */
+    font-family: Gilroy-Bold;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.04em;
+    text-align: left;
+}
+.training-price-para{
+    /* //styleName: Paragraph/P2/Regular; */
+    font-family: Gilroy-Regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+.training-feature-heading{
+    margin-top: 32px;
+}
+.training-feature-heading,.training-features{
+    /* //styleName: Paragraph/P2/Regular; */
+    font-family: Gilroy-Regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+.training-features{
+    list-style: none;
+}
+.training-feature{
+    display: flex;
+}
+.register-now-btn{
+    width: 100%;
+}
+.training-feature p{
+    margin-left: 4px;
+}

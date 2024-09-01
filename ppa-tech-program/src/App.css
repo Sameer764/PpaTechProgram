@@ -119,3 +119,23 @@
     padding: 60px;
     text-align: center;
  }
+ .pricing-plan-section{
+    background: #303778;
+    padding: 158px 56px;
+ }
+ .pricing-plan-card-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    gap: 24px;
+ }
+ .pricing-plan-heading{
+    /* //styleName: Heading/H1/Bold; */
+    font-family: Gilroy-Bold;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #FFFFFF;
+ }
