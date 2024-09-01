@@ -1,0 +1,51 @@
+.banner-sub-container{
+    display: flex;
+    gap: 40px;
+}
+.banner-left-text{
+    max-width:764px;
+}
+.banner-right-image img{
+    max-width: 508px;
+}
+.banner-heading{
+    font-family: Gilroy-Bold;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    /* font-weight: 900; */
+}
+.banner-para{
+    /* //styleName: Sub heading/H2/Regular; */
+    margin-top: 4px;
+    font-family: Gilroy-Regular;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+.banner-feature{
+    margin-top: 20px;
+}
+.apply-now-btn{
+    width: 312px;
+    height: 48px;
+    padding: 12px 48px 12px 48px;
+    border-radius: 6px;
+    /* opacity: 0px; */
+    background: #3940A0;
+    /* //styleName: Paragraph/P2/Bold; */
+    font-family: Gilroy-Bold;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    /* text-align: left; */
+    color: #FFFFFF;
+    border: none;
+    width: 312px;
+    margin-top: 20px;
+}

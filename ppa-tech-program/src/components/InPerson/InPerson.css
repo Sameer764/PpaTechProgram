@@ -1,0 +1,42 @@
+.in-person-inner-container{
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+.in-person-line{
+    /* width: 1px; */
+    border: 1px solid #CBD5E1;
+    height: 56px;
+}
+.in-person-heading{
+    /* //styleName: Heading/H2/Bold; */
+    font-family: Gilroy-Bold;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 52px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+
+    /* text-align: left; */
+}
+.in-person-sub-heading{
+    /* //styleName: Sub heading/H1/Bold; */
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #FFFFFF;
+}
+.in-person-sub-para{
+    font-family: Gilroy-Medium;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #FFFFFF;
+
+}

@@ -1,0 +1,43 @@
+.tech-fellowship-banner-container{
+    padding: 80px 64px;
+}
+.in-person-container{
+    padding: 24px 64px;
+    background: #020617;
+}
+.feature-container{
+    padding: 80px 64px;
+}
+.feature-heading{
+    /* //styleName: Heading/H1/Bold; */
+    font-family: Gilroy-Bold;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: 0.04em;
+    text-align: center;
+
+}
+.feature-para{
+    /* //styleName: Sub heading/H2/Regular; */
+    /* margin-top: 12px; */
+    margin: 12px auto auto auto;
+    max-width: 734px;
+    font-family: Gilroy-Regular;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+.in-person-card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.div-center-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 26px;
+}
