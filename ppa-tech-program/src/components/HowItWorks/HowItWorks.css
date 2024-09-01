@@ -1,0 +1,59 @@
+.how-it-works-container{
+    max-width: 1193px;
+    margin: 0 auto;
+    display: flex;
+    background: #F2F4FC;
+    padding: 60px;
+    border-radius: 20px;
+    gap: 60px;
+}
+.how-it-works-left{
+    max-width: 670px;
+}
+.how-it-works-left-img{
+    width: 100%;
+}
+.selection-div,.give-interview-div,.admission-offer-div{
+    max-width: 463px;
+    padding: 20px 40px;
+    border-radius: 12px;
+}
+.how-it-works-div-active{
+    background: #FFFFFF;
+}
+.how-it-works-div-active h3{
+    /* color: ; */
+    color: #3940A0;
+
+}
+.selection-div-para,.give-interview-div-para,.admission-offer-div-para{
+    margin-top: 8px;
+    /* //styleName: Paragraph/P2/Regular; */
+    font-family: Gilroy-Regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+
+}
+.selection-div-heading,.give-interview-div-heading,.admission-offer-div-heading{
+    /* //styleName: Sub heading/H2/Bold; */
+    font-family: Gilroy-Bold;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+.how-it-works-heading{
+    text-align: center;
+    margin: 0px 0px 40px 0px;
+    /* //styleName: Heading/H1/Bold; */
+    font-family: Gilroy-Bold;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: 0.04em;
+    text-align: center;
+}

@@ -1,0 +1,41 @@
+.project-card-img{
+    width: 100%;
+}
+.project-card{
+    padding: 24px;
+    border-radius: 10px;
+    background: #F1F5F9;
+    width: 427px;
+}
+.project-topic-desc{
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.project-topic-tag{
+    display: inline-block;
+    padding: 8px 20px 8px 20px;
+    border-radius: 5px;
+    background: #FFFFFF;
+}
+.project-card-heading{
+    margin-top: 20px;
+    /* //styleName: Sub heading/H1/Bold; */
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+.project-card-para{
+    margin-top: 12px;
+    /* //styleName: Paragraph/P2/Regular; */
+    font-family: Gilroy-Regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}

@@ -7,6 +7,9 @@ import Banner from "./components/Banner/Banner"
 import InPerson from "./components/InPerson/InPerson"
 import FeatureCard from './components/FeatureCard/FeatureCard';
 import OutlineCard from './components/OutlineCard/OutlineCard';
+import HowItWorks from './components/HowItWorks/HowItWorks';
+import CourseCurriculum from './components/CourseCurriculum/CourseCurriculum';
+import ProjectsCards from './components/ProjectsCards/ProjectsCards';
 
 function App() {
   const settings = {
@@ -81,7 +84,31 @@ function App() {
       "title":"Launch Your Career",
       "topics":["Assured Paid Internship at a Startup/ In-house Paid Internship at Innovation Lab (Weekend Mentorship and Mock Interviews)"]
     }
-  ]
+  ];
+
+  const ProjectCards=[
+    {
+      "id":1,
+      "imgsrc":"./src/assets/img/projects-imgs/project-img-1.png",
+      "heading":"Build an Inventory Management System for Farmley",
+      "para":"This project will demonstrate your skills in web development, database integration, and security.",
+      "tags":["Springdata JPA","MySQL or PostgreSQL","Spring Security"]
+    },
+    {
+      "id":2,
+      "imgsrc":"./src/assets/img/projects-imgs/project-img-2.png",
+      "heading":"Build an Customer Grievance Management System for Ship Rocket",
+      "para":"We will develop a microservice for user authentication and management. Users can register, log in, and manage their profiles through this service.",
+      "tags":["Microservice","Docker","Kubernetes"]
+    },
+    {
+      "id":3,
+      "imgsrc":"./src/assets/img/projects-imgs/project-img-3.png",
+      "heading":"Built a Fleet Performance for Blue Smart",
+      "para":"This project will demonstrate your skills in web development, microservices architecture, and cloud computing.",
+      "tags":["Web Devlopment","Cloud Computing","Microservice Architecture"]
+    }
+  ];
   return (
     <div className="App">
       <div className="tech-fellowship-banner-container">
@@ -118,6 +145,34 @@ function App() {
           }
           </Slider>
         </div>
+      </div>
+      <div className="how-it-works-section">
+        <h2 className='how-it-works-heading'>How it works</h2>
+          <HowItWorks/>
+      </div>
+      <div className="course-curriculum-container">
+        <h2 className='course-curriculum-heading'>Course Curriculum</h2>
+        <div className="course-curriculum-inner-container">
+          <CourseCurriculum/>
+        </div>
+      </div>
+      <div className="hand-on-projects-section">
+        <h2 className='hands-on-projects-heading'>
+          Learn by Building: Hands-On Projects for Real-World Mastery
+        </h2>
+        <div className='hands-on-projects-card-container'>
+          {
+            ProjectCards.map((projectCard)=>(
+              <ProjectsCards 
+              key={projectCard.id}
+              imgsrc={projectCard.imgsrc} 
+              heading={projectCard.heading} 
+              para={projectCard.para} 
+              tags={projectCard.tags}/>
+            ))
+          }
+        </div>
+        <button className="apply-now-btn">Apply Now</button>
       </div>
     </div>
   )

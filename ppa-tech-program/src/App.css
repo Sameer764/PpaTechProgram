@@ -70,3 +70,52 @@
     width: 40px;
     height: 40px;
  }
+ .how-it-works-section{
+    padding: 60px 64px;
+ }
+ .course-curriculum-container{
+    background: #E1E7F8;
+    padding: 60px 0;
+ }
+ .course-curriculum-heading{
+    /* //styleName: Heading/H1/Bold; */
+    font-family: Gilroy-Bold;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: 0.04em;
+    text-align: center;
+ }
+ .course-curriculum-inner-container{
+    max-width: 1200px;
+    background: #A4BAEC;
+    margin: 0 auto;
+    padding: 60px 40px 60px 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+ }
+ .hands-on-projects-heading{
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1020px;
+    /* //styleName: Heading/H1/Bold; */
+    font-family: Gilroy-Bold;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: 0.04em;
+    /* text-align: center; */
+ }
+ .hands-on-projects-card-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+ }
+ .hand-on-projects-section{
+    padding: 60px;
+    text-align: center;
+ }

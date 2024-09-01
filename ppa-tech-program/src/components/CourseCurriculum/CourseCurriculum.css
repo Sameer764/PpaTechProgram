@@ -1,0 +1,57 @@
+.module{
+    padding: 12px 20px 12px 20px;
+    border-radius: 10px;
+    border: 1px solid #D0D5DD;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.active-module{
+    background: #3940A0;
+    /* color: #FFFFFF; */
+}
+.active-module .month-span{
+    color: #FFFFFF;
+}
+.course-curriculum-right{
+    /* width: 468px; */
+    padding: 20px;
+    border-radius: 11px;
+    background: #3940A0;
+    color: #FFFFFF;
+    height: 232px;
+}
+.course-curriculum-left{
+    width: 592px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.module-span{
+    padding: 8px 16px 8px 16px;
+    border-radius: 27px;
+    background: #F1F5F9;
+}
+.topics-div{
+    margin-left: 20px;
+}
+.topics-heading{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-align: left;
+}
+.topic-desc{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    text-align: left;
+}
+.topics-hr{
+    margin: 14px 0px;
+}
