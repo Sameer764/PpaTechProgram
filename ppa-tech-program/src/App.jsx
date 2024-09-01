@@ -1,10 +1,21 @@
 import React from 'react'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import './app.css'
 import Banner from "./components/Banner/Banner"
 import InPerson from "./components/InPerson/InPerson"
 import FeatureCard from './components/FeatureCard/FeatureCard';
+import OutlineCard from './components/OutlineCard/OutlineCard';
 
 function App() {
+  const settings = {
+    // dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1
+  };
   const FeatureCards=[
     {
       "id":1,
@@ -37,6 +48,40 @@ function App() {
       "title":"Accredited Certification of Tech Fellowship Program"
     }
   ];
+
+  const OutlineCards=[
+    {
+      "id":1001,
+      "imgsrc":["./src/assets/img/outline-card-icons/outline-card-icon-1.png"],
+      "title":"Be a Frontend Developer",
+      "topics":["Master HTML, CSS, and JavaScript to create dynamic and responsive web pages.", 
+        "Dive into ReactJS to build interactive user interfaces."]
+    },
+    {
+      "id":2001,
+      "imgsrc":["./src/assets/img/outline-card-icons/outline-card-icon-2.png"],
+      "title":"Be a Backend Developer",
+      "topics":["Learn NodeJS or Java Springboot, API Design and Fundamentals of Data Structures and Algorithms"]
+    },
+    {
+      "id":3001,
+      "imgsrc":["./src/assets/img/outline-card-icons/outline-card-icon-3.png"],
+      "title":"Be a Code Reviewer and Design Expert",
+      "topics":["Learn Computer Science Fundamentals, Design Patterns, Concurrency"]
+    },
+    {
+      "id":4001,
+      "imgsrc":["./src/assets/img/outline-card-icons/outline-card-icon-4.png"],
+      "title":"Be a Robust Problem Solver and Systems Expert",
+      "topics":["Advance Data Structures and Algorithms, End to End Industry Project, System Design, DevOps, Docker and Kubernetes. "]
+    },
+    {
+      "id":5001,
+      "imgsrc":["./src/assets/img/outline-card-icons/outline-card-icon-5.png","./src/assets/img/outline-card-icons/outline-card-icon-6.png"],
+      "title":"Launch Your Career",
+      "topics":["Assured Paid Internship at a Startup/ In-house Paid Internship at Innovation Lab (Weekend Mentorship and Mock Interviews)"]
+    }
+  ]
   return (
     <div className="App">
       <div className="tech-fellowship-banner-container">
@@ -55,6 +100,23 @@ function App() {
         </div>
         <div className='div-center-btn'> 
           <button className='apply-now-btn btn-center'>Apply Now</button>
+        </div>
+      </div>
+      <div className="program-outline-container">
+        <div className='program-outline-text-div'>
+          <h2 className='program-outline-heading'>Program Outline</h2>
+          <img className='program-outline-trending-icon' src="./src/assets/img/outline-card-icons/program-outline-trending-up.png" alt="" />
+        </div>
+        <div className="program-outline-cards-container">
+          <Slider {...settings}>
+          {
+            OutlineCards.map((outlinecard,idx)=>
+              (
+                <OutlineCard key={idx} id={outlinecard.id} title={outlinecard.title} imgsrcs={outlinecard.imgsrc} topics={outlinecard.topics}/>
+              )
+            )
+          }
+          </Slider>
         </div>
       </div>
     </div>

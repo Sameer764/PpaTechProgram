@@ -3,6 +3,7 @@
 }
 .in-person-container{
     padding: 24px 64px;
+    /* padding-right: 0px; */
     background: #020617;
 }
 .feature-container{
@@ -41,3 +42,31 @@
     justify-content: center;
     margin-top: 26px;
 }
+.program-outline-heading{
+    /* //styleName: Heading/H1/Bold; */
+    font-family: Gilroy-Bold;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF; 
+    /* text-align: center; */
+}
+.program-outline-container{
+    background: #303778;
+    padding: 60px 64px;
+}
+/* .program-outline-cards-container{
+    display: flex;
+    gap: 24px;
+} */
+ .program-outline-text-div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 12px;
+ }
+ .program-outline-trending-icon{
+    width: 40px;
+    height: 40px;
+ }
