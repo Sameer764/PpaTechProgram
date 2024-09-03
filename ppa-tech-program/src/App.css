@@ -228,3 +228,43 @@
    letter-spacing: 0.02em;
    text-align: center;
  }
+ .have-more-questions{
+   padding: 60px 0px;
+ }
+ .have-more-heading{
+   /* //styleName: Heading/H2/Semibold; */
+   font-family: Poppins;
+   font-size: 40px;
+   font-weight: 600;
+   line-height: 60px;
+   letter-spacing: 0.04em;
+   text-align: center;
+ }
+ .have-more-crousel-container{
+    margin-top: 80px;
+ }
+ .have-more-crousel-container .slick-slide{
+   /* width: 1440px;
+    */
+    width: 372px !important;
+    margin: 0 20px;
+ }
+ .talk-to-us-btn{
+    width: 177px;
+    padding: 16px 32px 16px 32px;
+    border-radius: 10px;
+    background: #3940A0;
+    border: none;
+    /* //styleName: Paragraph/P2/Semibold; */
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #FFFFFF;
+ }
+ .talk-to-us-btn-div{
+  margin-top: 60px;
+  text-align: center;
+ }

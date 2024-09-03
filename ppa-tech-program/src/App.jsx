@@ -13,6 +13,7 @@ import ProjectsCards from './components/ProjectsCards/ProjectsCards';
 import PricingCard from './components/PricingCard/PricingCard';
 import SuccessStoriesCard from './components/SuccessStoriesCard/SuccessStoriesCard';
 import FaqAccordian from './components/FaqAccordian/FaqAccordian';
+import GalleryCard from './components/GalleryCard/GalleryCard';
 
 function App() {
   const settings1 = {
@@ -29,6 +30,15 @@ function App() {
     autoplay:true,
     speed: 700,
     arrows:true,
+    slidesToShow: 3,
+    slidesToScroll: 1
+  };
+  const settings3 = {
+    // className:"success-arrow",
+    infinite: true,
+    autoplay:true,
+    speed: 700,
+    arrows:false,
     slidesToShow: 3,
     slidesToScroll: 1
   };
@@ -183,6 +193,29 @@ function App() {
       "studentname":"Ayush Srivasthva",
       "companylogo":"./src/assets/img/success-stories-img/success-stories-company-2.png"
     },
+  ]
+
+  const GalleryCards=[
+    {
+      "id":1,
+      "imgsrc":"./src/assets/img/have-more-crousel-card-img/gallery-img-1.svg",
+    },
+    {
+      "id":2,
+      "imgsrc":"./src/assets/img/have-more-crousel-card-img/gallery-img-2.svg",
+    },
+    {
+      "id":3,
+      "imgsrc":"./src/assets/img/have-more-crousel-card-img/gallery-img-3.svg",
+    },
+    {
+      "id":4,
+      "imgsrc":"./src/assets/img/have-more-crousel-card-img/gallery-img-4.svg",
+    },
+    {
+      "id":5,
+      "imgsrc":"./src/assets/img/have-more-crousel-card-img/gallery-img-5.svg",
+    }
   ]
 
   return (
@@ -362,9 +395,15 @@ function App() {
       </div>
       <div className="have-more-questions">
         <h2 className="have-more-heading">Have more questions?</h2>
-        <button className='talk-to--us-btn'>Talk to use</button>
+        <div className='talk-to-us-btn-div'>
+          <button className='talk-to-us-btn'>Talk to use</button>
+        </div>
         <div className="have-more-crousel-container">
-          
+          <Slider {...settings3}>
+            {GalleryCards.map((gallerycard)=>(
+              <GalleryCard key={gallerycard.id} imgsrc={gallerycard.imgsrc}/>
+            ))}
+          </Slider>
         </div>
       </div>
     </div>
