@@ -11,16 +11,27 @@ import HowItWorks from './components/HowItWorks/HowItWorks';
 import CourseCurriculum from './components/CourseCurriculum/CourseCurriculum';
 import ProjectsCards from './components/ProjectsCards/ProjectsCards';
 import PricingCard from './components/PricingCard/PricingCard';
+import SuccessStoriesCard from './components/SuccessStoriesCard/SuccessStoriesCard';
+import FaqAccordian from './components/FaqAccordian/FaqAccordian';
 
 function App() {
-  const settings = {
+  const settings1 = {
     // dots: true,
+    className:"outline-arrow",
     infinite: false,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1
   };
-
+  const settings2 = {
+    className:"success-arrow",
+    infinite: true,
+    autoplay:true,
+    speed: 700,
+    arrows:true,
+    slidesToShow: 3,
+    slidesToScroll: 1
+  };
   const FeatureCards=[
     {
       "id":1,
@@ -136,6 +147,44 @@ function App() {
     }
   ];
 
+  const SuccessCards=[
+    {
+      "id":1,
+      "reviewtext":"The course covers everything in depth and in a very structured way. There is never enough to learn and grow. I felt very prepared for my interviews after being a part of this course, and could enhance my DSA and problem solving skills in greater depth.",
+      "imgsrc":"./src/assets/img/success-stories-img/success-stories-img-1.png",
+      "studentname":"Balvinder Kaur",
+      "companylogo":"./src/assets/img/success-stories-img/success-stories-company-1.png"
+    },
+    {
+      "id":2,
+      "reviewtext":"Fortunately, came across Programming Pathshala on Quora and I was amazed to see awesome reviews. I went through the website and checked the Curriculum, and moreover the fee of the course was in my budget.",
+      "imgsrc":"./src/assets/img/success-stories-img/success-stories-img-2.png",
+      "studentname":"Ayush Srivasthva",
+      "companylogo":"./src/assets/img/success-stories-img/success-stories-company-2.png"
+    },
+    {
+      "id":3,
+      "reviewtext":"Thanks to the remarkable course - Low Level Design, I am now skilled at navigating complex architectural challenges, evaluating multiple solutions with precision, and making informed decisions by weighing their respective advantages and disadvantages.",
+      "imgsrc":"./src/assets/img/success-stories-img/success-stories-img-3.png",
+      "studentname":"Chetan Verma",
+      "companylogo":"./src/assets/img/success-stories-img/success-stories-company-3.png"
+    },
+    {
+      "id":1,
+      "reviewtext":"The course covers everything in depth and in a very structured way. There is never enough to learn and grow. I felt very prepared for my interviews after being a part of this course, and could enhance my DSA and problem solving skills in greater depth.",
+      "imgsrc":"./src/assets/img/success-stories-img/success-stories-img-1.png",
+      "studentname":"Balvinder Kaur",
+      "companylogo":"./src/assets/img/success-stories-img/success-stories-company-1.png"
+    },
+    {
+      "id":2,
+      "reviewtext":"Fortunately, came across Programming Pathshala on Quora and I was amazed to see awesome reviews. I went through the website and checked the Curriculum, and moreover the fee of the course was in my budget.",
+      "imgsrc":"./src/assets/img/success-stories-img/success-stories-img-2.png",
+      "studentname":"Ayush Srivasthva",
+      "companylogo":"./src/assets/img/success-stories-img/success-stories-company-2.png"
+    },
+  ]
+
   return (
     <div className="App">
       <div className="tech-fellowship-banner-container">
@@ -162,7 +211,7 @@ function App() {
           <img className='program-outline-trending-icon' src="./src/assets/img/outline-card-icons/program-outline-trending-up.png" alt="" />
         </div>
         <div className="program-outline-cards-container">
-          <Slider {...settings}>
+          <Slider {...settings1}>
           {
             OutlineCards.map((outlinecard,idx)=>
               (
@@ -215,6 +264,107 @@ function App() {
               />
             ))
           }
+        </div>
+      </div>
+      <div className="success-stories-section">
+        <h2 className='success-stories-heading'>Success Stories</h2>
+        <div className="success-stories-card-container">
+          <Slider {...settings2}>
+            {
+              SuccessCards.map((successcard)=>(
+                <SuccessStoriesCard
+                key={successcard.id}
+                reviewtext={successcard.reviewtext}
+                imgsrc={successcard.imgsrc}
+                studentname={successcard.studentname}
+                companylogo={successcard.companylogo}
+                />
+              ))
+            }
+          </Slider>
+        </div>
+        <button className='read-more-btn'>Read More Stories</button>
+      </div>
+      <div className="why-tech-fellowship-program-section">
+        <h2 className="why-tech-fellowship-heading">
+          Why Tech Fellowship Program 
+        </h2>
+        <div className="why-tech-fellowship-program-table-container">
+          <table className='why-tech-fellowship-program-table'>
+            <tr>
+              <th>Online Program</th>
+              <th>Classroom Program</th>
+              <th>Tech Fellowship Program</th>
+            </tr>
+            <tr>
+              <td>No or Broken Mentorship </td>
+              <td>No 1:1 Mentorship </td>
+              <td>1:1 F2F Mentorship </td>
+            </tr>
+            <tr>
+              <td>No Industry Exposure </td>
+              <td>No Industry Exposure </td>
+              <td>Industry Exposure </td>
+            </tr>
+            <tr>
+              <td>Toy Projects </td>
+              <td>Toy Projects</td>
+              <td>Real projects, MVPs, Hosted applications</td>
+            </tr>
+            <tr>
+              <td>1:1 F2F Mentorship </td>
+              <td>No Internships</td>
+              <td>Assured onsite Internships </td>
+            </tr>
+            <tr>
+              <td>No Peer Group Learning </td>
+              <td>Little peer interaction</td>
+              <td>In-built team with Product managers, UI experts, tech leads</td>
+            </tr>
+            <tr>
+              <td>Very Slow Learning</td>
+              <td>Slow pace for Huge Groups</td>
+              <td>Very High pace of learning</td>
+            </tr>
+            <tr>
+              <td>No Personalized Path</td>
+              <td>No Personalisation</td>
+              <td>Hyper-Personalized for you</td>
+            </tr>
+            <tr>
+              <td>No ecosystem</td>
+              <td>Classroom ecosystem</td>
+              <td>Corporate style Learn-as-you-work Ecosystem</td>
+            </tr>
+            <tr>
+              <td>No Discipline</td>
+              <td>Little Discipline</td>
+              <td>Fun while being disciplined</td>
+            </tr>
+            <tr>
+              <td>Consistency Issues</td>
+              <td>Less Consistency Issues </td>
+              <td>No consistency Issues, improved leadership and behavioral traits</td>
+            </tr>
+            <tr>
+              <td>Lonely Path, with you on your own</td>
+              <td>One to Many Learning Experience</td>
+              <td>Immersive Work Experience</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div className="frequently-asked-question-section">
+        <h2 className='frequently-asked-heading'>
+          Frequently Asked Questions
+        </h2>
+        <FaqAccordian/>
+      </div>
+      <div className="have-more-questions">
+        <h2 className="have-more-heading">Have more questions?</h2>
+        <button className='talk-to--us-btn'>Talk to use</button>
+        <div className="have-more-crousel-container">
+          
         </div>
       </div>
     </div>

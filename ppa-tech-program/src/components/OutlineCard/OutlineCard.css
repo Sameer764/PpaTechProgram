@@ -40,20 +40,20 @@
     letter-spacing: 0.02em;
     text-align: left;
 }
-.slick-prev{ 
+.outline-arrow .slick-prev{ 
     position: absolute;
     top: -3rem;
     /* right: -112rem; */
     left: 75rem;
 }
-.slick-next{ 
+.outline-arrow .slick-next{ 
     position: absolute;
     top: -3rem;
     /* right: -112rem; */
     /* left: 75rem; */
     right: 6rem;
 }
-.slick-prev:before,.slick-next::before {
+.outline-arrow .slick-prev:before,.slick-next::before {
     /* content: '←'; */
     font-size: 60px;
 }

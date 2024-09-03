@@ -1,0 +1,54 @@
+.success-stories-card{
+    width: 388px;
+    padding: 12px 20px 12px 20px;
+    border-radius: 20px;
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.success-stories-student-img{
+    /* text-align: center; */
+    margin-top: 40px;
+}
+.success-stories-student-img img{
+    width: 132px;
+}
+.success-stories-para{
+    /* //styleName: Paragraph/P2/Regular; */
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+.student-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+}
+.student-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+.success-stories-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.success-arrow .slick-prev:before,.slick-next:before{
+    /* content: '←'; */
+    /* color: red; */
+    font-size: 60px;
+    color: black;
+} 
+.success-stories-quotation{
+    padding: 20px;
+}

@@ -1,0 +1,35 @@
+.faq-item{
+    width: 852px;
+    
+}
+.faq-hr{
+    border: 1px solid #E7EAEE;
+    /* margin: 16px 0px 20px 0px; */
+}
+.faq-accordian{
+    width: 852px;
+    margin-top: 20px;
+}
+.faq-ques{
+    /* //styleName: Paragraph/P2/Bold; */
+    cursor: pointer;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    font-family: Gilroy-Bold;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+.faq-ans{
+    /* margin-top: 16px; */
+    padding-bottom: 16px;
+    /* //styleName: Paragraph/P2/Regular; */
+    font-family: Gilroy-Regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
