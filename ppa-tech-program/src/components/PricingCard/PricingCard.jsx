@@ -1,5 +1,6 @@
 import React from 'react'
 import "./PricingCard.css"
+import "./PricingCardResponsive.css"
 
 function PricingCard({plantag,trainingduration,trainingprice,features}) {
   return (

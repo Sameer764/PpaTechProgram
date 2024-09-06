@@ -1,3 +1,24 @@
+/* Scrollbar
+/* width */
+::-webkit-scrollbar {
+   width: 0px;
+ }
+ 
+ /* Track */
+ ::-webkit-scrollbar-track {
+   background: #fff;
+ }
+ 
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+   background: #fff;
+ }
+ 
+ /* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+   background: #fff;
+ }
+
 .tech-fellowship-banner-container{
     padding: 5.556vw 4.167vw;
 }
