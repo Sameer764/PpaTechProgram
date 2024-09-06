@@ -26,6 +26,7 @@
     width: 32.15vw; /* 463px */
     padding: 1.39vw 2.78vw; /* 20px 40px */
     border-radius: 0.83vw; /* 12px */
+    cursor: pointer;
 }
 
 .how-it-works-div-active {

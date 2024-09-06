@@ -15,7 +15,8 @@ function OutlinePrevArrow(props) {
             backgroundColor:"white",
             display:"flex",
             alignItems:"center",
-            borderRadius:"50%"
+            borderRadius:"50%",
+            cursor:"pointer"
          }}
         onClick={onClick}
       >

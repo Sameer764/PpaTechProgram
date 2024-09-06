@@ -177,6 +177,7 @@
    letter-spacing: 0.02em;
    color: #FFFFFF;
    border: none;
+   cursor: pointer;
 }
 
 .why-tech-fellowship-program-section {
@@ -278,6 +279,7 @@ tr:nth-child(even) {
    letter-spacing: 0.02em;
    text-align: center;
    color: #FFFFFF;
+   cursor: pointer;
 }
 
 .talk-to-us-btn-div {

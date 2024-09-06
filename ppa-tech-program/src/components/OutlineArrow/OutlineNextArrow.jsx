@@ -17,6 +17,7 @@ function OutlineNextArrow(props) {
             display: "flex",
             alignItems: "center",
             borderRadius: "50%", /* 50% (circle with 50% border-radius) */
+            cursor:"pointer"
 
          }
         }
