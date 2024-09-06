@@ -69,6 +69,7 @@
         text-align: left;
     }
     .training-feature{
+        gap: 0.533vw;
         font-size: 4.267vw;
         font-weight: 400;
         line-height: 6.4vw;

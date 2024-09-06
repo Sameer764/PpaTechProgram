@@ -1,0 +1,43 @@
+@media only screen and (max-width: 600px) {
+    .frequently-asked-question-section{
+        padding: 10.667vw 5.333vw;
+    }
+    .frequently-asked-heading{
+        font-size: 6.4vw;
+        font-weight: 400;
+        line-height: 8.533vw;
+        letter-spacing: 0.02em;
+        text-align: center;
+    }
+    .faq-accordian{
+        margin-top: 7.467vw;
+        width: 89.333vw;
+    }
+    .faq-item{
+        width: 100%;
+    }
+    .faq-ques{
+        margin: 3.2vw 0vw;
+        font-size: 4.267vw;
+        font-weight: bolder;
+        line-height: 6.4vw;
+        letter-spacing: 0.02em;
+        text-align: left;
+    }
+    .faq-ans{
+        margin-top: 1.067vw;
+        font-size: 4.267vw;
+        font-weight: 400;
+        line-height: 6.4vw;
+        letter-spacing: 0.02em;
+        text-align: left;
+        margin-bottom: 3.2vw;
+    }
+    .faq-hr{
+        border: 0.267vw solid #E7EAEE;
+    }
+    .faq-icon{
+        width: 4.133vw;
+        height: 2.267vw;
+    }
+}

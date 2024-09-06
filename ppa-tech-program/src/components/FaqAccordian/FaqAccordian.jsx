@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './FaqAccordian.css'
+import './FaqAccordianResponsive.css'
 
 function FaqAccordian() {
     const [selected,setSelected]=useState(null);
