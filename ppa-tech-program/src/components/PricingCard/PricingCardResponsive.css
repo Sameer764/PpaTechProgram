@@ -4,6 +4,7 @@
     }
     .pricing-plan-card-section{
         flex-direction: column;
+        gap: 3.2vw;
     }
     .pricing-plan-heading{
         /* //styleName: Sub heading/H1/Bold; */
@@ -60,6 +61,7 @@
         text-align: left;
     }
     .training-feature-heading{
+        margin-top: 5.333vw;
         font-size: 4.267vw;
         font-weight: 400;
         line-height: 6.4vw;
@@ -72,6 +74,7 @@
         line-height: 6.4vw;
         letter-spacing: 0.02em;
         text-align: left;
+        margin-top: 2.133vw;
     }
     .pricing-card-tick-img{
         width: 5.333vw;
