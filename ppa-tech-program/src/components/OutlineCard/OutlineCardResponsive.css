@@ -1,0 +1,56 @@
+@media only screen and (max-width: 600px) {
+    .outline-card-container{
+        width: 82.667vw;
+        height: 75.733vw;
+        border-radius: 5.333vw;
+    }
+    .card-icon-div{
+        height: fit-content;
+        padding: 3.2vw 0vw;
+        border-radius: 5.333vw 5.333vw 0 0;
+    }
+    .card-icon{
+        width: 10.667vw;
+        height: 10.667vw;
+    }
+    /* .program-outline-cards-container{
+        display: flex;
+    } */
+    .program-outline-cards-container .slick-slide {
+        width: 82.667vw !important;
+    }
+    .program-outline-heading{
+        font-size: 5.333vw;
+        line-height: 7.467vw;
+    }
+    .program-outline-trending-icon{
+        width: 6.4vw;
+        height: 6.4vw;
+    }
+    .card-outline-heading{
+        font-size: 5.333vw;
+        line-height: 7.467vw;
+    }
+    .card-outline-para{
+        font-size: 4.267vw;
+        line-height: 6.4vw;
+    }
+    .outline-card-text{
+        padding: 3.2vw;
+        width: 76.267vw;
+    }
+    .outline-card-text ul{
+        margin-left: 3.2vw;
+    }
+    .outline-card-arrow{
+        top: -7.2vw !important;
+        width: 7.8vw !important;
+        height: 7.8vw !important;
+    }
+    .outline-card-arrow img{
+        left: 3vw !important;
+    }
+    .outline-prev-arrow{
+        left: 72vw !important;
+    }
+  }

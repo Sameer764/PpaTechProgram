@@ -1,54 +1,82 @@
-.success-stories-card{
-    width: 388px;
-    padding: 12px 20px 12px 20px;
-    border-radius: 20px;
+.success-stories-card {
+    width: 26.94vw; /* 388px */
+    height: 35.97vw; /* 518px */
+    padding: 0.83vw 1.39vw; /* 12px 20px */
+    border-radius: 1.39vw; /* 20px */
     background: #F8FAFC;
-    border: 1px solid #E2E8F0;
+    border: 0.069vw solid #E2E8F0; /* 1px solid #E2E8F0 */
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.success-stories-student-img{
-    /* text-align: center; */
-    margin-top: 40px;
+.quotation-img{
+    width: 3.333vw;
 }
-.success-stories-student-img img{
-    width: 132px;
+
+.success-stories-student-img {
+    margin-top: 2.78vw; /* 40px */
 }
-.success-stories-para{
-    /* //styleName: Paragraph/P2/Regular; */
+
+.success-stories-student-img img {
+    width: 9.17vw; /* 132px */
+}
+
+.success-stories-para {
     font-family: Poppins;
-    font-size: 16px;
+    font-size: 1.11vw; /* 16px */
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.67vw; /* 24px */
     letter-spacing: 0.02em;
     text-align: center;
 }
-.student-name{
+
+.student-name {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 12px;
+    gap: 0.938vw;
+    margin-top: 0.83vw; /* 12px */
 }
-.student-profile{
+.student-name-text{
+    /* //styleName: Subheading/H2/Semibold; */
+    font-family: Poppins;
+    font-size: 1.389vw;
+    font-weight: 600;
+    line-height: 2.222vw;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+.student-role{
+    /* //styleName: Subheading/H2/Semibold; */
+    font-family: Poppins;
+    font-size: 1.389vw;
+    font-weight: 600;
+    line-height: 2.222vw;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+}
+.student-profile {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 8px;
+    gap: 0.556vw;
+    margin-top: 0.56vw; /* 8px */
 }
-.success-stories-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.company-icon{
+    width: 8.889vw;
 }
-.success-arrow .slick-prev:before,.slick-next:before{
-    /* content: '←'; */
-    /* color: red; */
-    font-size: 60px;
-    color: black;
-} 
-.success-stories-quotation{
-    padding: 20px;
+.linkedin-icon{
+    width: 1.667vw;
+}
+
+.success-stories-div {
+    width: 26.94vw; /* 388px */
+    margin: 0 auto;
+}
+
+.success-stories-quotation {
+    padding: 1.39vw; /* 20px */
 }

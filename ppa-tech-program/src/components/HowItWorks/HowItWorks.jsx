@@ -8,7 +8,7 @@ function HowItWorks() {
   return (
     <div className='how-it-works-container'>
         <div className="how-it-works-left">
-            <img className='how-it-works-left-img' src={`./src/assets/img/how-it-works-img/how-it-works-img-${value}.png`} alt={`how-it-works-img-${value}`} />
+            <img className='how-it-works-left-img' src={`./src/assets/img/how-it-works-img/how-it-works-img-${value}.svg`} alt={`how-it-works-img-${value}`} />
         </div>
         <div className="how-it-works-right">
             <div className={(activeClass==1)?`selection-div how-it-works-div-active`:`selection-div`} onClick={()=>{setValue(1),addActiveClass(1)}}>

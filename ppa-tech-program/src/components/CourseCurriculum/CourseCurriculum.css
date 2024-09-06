@@ -1,57 +1,93 @@
-.module{
-    padding: 12px 20px 12px 20px;
-    border-radius: 10px;
-    border: 1px solid #D0D5DD;
+.module {
+    padding: 0.83vw 1.39vw 0.83vw 1.39vw; /* 12px 20px 12px 20px */
+    border-radius: 0.69vw; /* 10px */
+    border: 0.07vw solid #D0D5DD; /* 1px */
     background: #FFFFFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
-.active-module{
+
+.active-module {
     background: #3940A0;
-    /* color: #FFFFFF; */
 }
-.active-module .month-span{
+
+.active-module .month-span {
     color: #FFFFFF;
 }
-.course-curriculum-right{
-    /* width: 468px; */
-    padding: 20px;
-    border-radius: 11px;
+
+.course-curriculum-right {
+    padding: 1.39vw; /* 20px */
+    border-radius: 0.76vw; /* 11px */
     background: #3940A0;
     color: #FFFFFF;
-    height: 232px;
+    width: 32.5vw; /* 468px */
+    height: fit-content;
 }
-.course-curriculum-left{
-    width: 592px;
+
+.course-curriculum-left {
+    width: 41.11vw; /* 592px */
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.39vw; /* 20px */
 }
-.module-span{
-    padding: 8px 16px 8px 16px;
-    border-radius: 27px;
-    background: #F1F5F9;
-}
-.topics-div{
-    margin-left: 20px;
-}
-.topics-heading{
+.month-span{
     font-family: Poppins;
-    font-size: 16px;
+    font-size: 1.111vw;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 1.667vw;
     letter-spacing: 0.04em;
     text-align: left;
 }
-.topic-desc{
+.module-span {
+    padding: 0.56vw 1.11vw 0.56vw 1.11vw; /* 8px 16px 8px 16px */
+    border-radius: 1.88vw; /* 27px */
+    background: #F1F5F9;
     font-family: Poppins;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
+    font-size: 1.111vw;
+    font-weight: 600;
+    line-height: 1.667vw;
     letter-spacing: 0.04em;
     text-align: left;
 }
-.topics-hr{
-    margin: 14px 0px;
+
+.topics-div {
+    margin-left: 1.39vw; /* 20px */
+}
+
+.topics-heading {
+    font-family: Poppins;
+    font-size: 1.11vw; /* 16px */
+    font-weight: 600;
+    line-height: 1.67vw; /* 24px */
+    letter-spacing: 0.04em;
+    text-align: left;
+}
+
+.topic-desc {
+    font-family: Poppins;
+    font-size: 0.97vw; /* 14px */
+    font-weight: 400;
+    line-height: 1.39vw; /* 20px */
+    letter-spacing: 0.04em;
+    text-align: left;
+}
+
+.topics-hr {
+    margin: 0.97vw 0; /* 14px 0 */
+}
+
+.topics-item {
+    font-family: Poppins;
+    font-size: 0.97vw; /* 14px */
+    font-weight: 400;
+    line-height: 1.39vw; /* 20px */
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.course-curriculum-right-mobile{
+    display: none;
 }

@@ -6,7 +6,7 @@ function SuccessStoriesCard({reviewtext,imgsrc,studentname,companylogo}) {
     <div className='success-stories-div'>
         <div className='success-stories-card'>
             <div className="success-stories-quotation">
-                <img src="./src/assets/img/success-stories-img/quotation-icon.png" alt="quotation-img" />
+                <img className='quotation-img' src="./src/assets/img/success-stories-img/quotation-icon.png" alt="quotation-img" />
             </div>
             <p className='success-stories-para'>
                 {reviewtext}
@@ -15,12 +15,12 @@ function SuccessStoriesCard({reviewtext,imgsrc,studentname,companylogo}) {
                 <img src={imgsrc} alt="success-stories-img" />
             </div>
             <div className='student-name'>
-                <h3>{studentname}</h3>
-                <img src="./src/assets/img/success-stories-img/linkedin-icon.png" alt="linkedin-icon" />
+                <h3 className='student-name-text'>{studentname}</h3>
+                <img className='linkedin-icon' src="./src/assets/img/success-stories-img/linkedin-icon.png" alt="linkedin-icon" />
             </div>
             <div className="student-profile">
                 <h3 className='student-role'>SDE</h3>
-                <img src={companylogo} alt="company-icon" />
+                <img className='company-icon' src={companylogo} alt="company-icon" />
             </div>
         </div>
     </div>

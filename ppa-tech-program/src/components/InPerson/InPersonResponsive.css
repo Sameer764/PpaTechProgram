@@ -1,0 +1,40 @@
+@media only screen and (max-width: 600px) {
+    .in-person-container{
+        padding: 5.333vw;
+    }
+    .in-person-inner-container{
+        flex-direction: column;
+        gap: 0vw;
+    }
+    .in-person-line{
+        width: 89.333vw;
+        height: 0.267vw;
+        margin: 3.2vw;
+    }
+    .in-person-mobile-div{
+        display: grid;
+        grid-template-rows: 22vw 11vw;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 12vw;
+        row-gap: 5.333vw;
+    }
+    .room-heading,.in-person-sub-heading{
+        font-size: 5.333vw;
+        line-height: 7.467vw;
+        letter-spacing: 0.02em;
+        text-align: center;
+    }
+    .room-heading{
+        width: 55.467vw;
+    }
+    .in-person-icon{
+        width: 4.267vw;
+    }
+    .in-person-sub-para{
+        font-size: 3.2vw;
+        line-height: 4.267vw;
+    }
+    .in-person-item{
+        margin-top: 1.067vw;
+    }
+  }

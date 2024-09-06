@@ -14,6 +14,10 @@ import PricingCard from './components/PricingCard/PricingCard';
 import SuccessStoriesCard from './components/SuccessStoriesCard/SuccessStoriesCard';
 import FaqAccordian from './components/FaqAccordian/FaqAccordian';
 import GalleryCard from './components/GalleryCard/GalleryCard';
+import SuccessNextArrow from './components/SuccessCustomArrow/SuccessNextArrow'
+import SuccessPrevArrow from './components/SuccessCustomArrow/SuccessPrevArrow';
+import OutlineNextArrow from './components/OutlineArrow/OutlineNextArrow';
+import OutlinePrevArrow from './components/OutlineArrow/OutlinePrevArrow';
 
 function App() {
   const settings1 = {
@@ -22,7 +26,9 @@ function App() {
     infinite: false,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    nextArrow: <OutlineNextArrow className={"outline-next-arrow"}/>,
+    prevArrow: <OutlinePrevArrow className={"outline-next-arrow"}/>
   };
   const settings2 = {
     className:"success-arrow",
@@ -31,7 +37,10 @@ function App() {
     speed: 700,
     arrows:true,
     slidesToShow: 3,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    intialSlide: 0,
+    nextArrow: <SuccessNextArrow />,
+    prevArrow: <SuccessPrevArrow />,
   };
   const settings3 = {
     // className:"success-arrow",
@@ -40,37 +49,38 @@ function App() {
     speed: 700,
     arrows:false,
     slidesToShow: 3,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    initialSlide: 0
   };
   const FeatureCards=[
     {
       "id":1,
-      "imgsrc":"./src/assets/img/feature-card-img/feature-card-img-1.png",
+      "imgsrc":"./src/assets/img/feature-card-img/feature-card-img-1.svg",
       "title":"Work and Learn In-Office."
     },
     {
       "id":2,
-      "imgsrc":"./src/assets/img/feature-card-img/feature-card-img-2.png",
+      "imgsrc":"./src/assets/img/feature-card-img/feature-card-img-2.svg",
       "title":"Build Full Stack Applications with complexity of Scale"
     },
     {
       "id":3,
-      "imgsrc":"./src/assets/img/feature-card-img/feature-card-img-3.png",
+      "imgsrc":"./src/assets/img/feature-card-img/feature-card-img-3.svg",
       "title":"Collaborate with mentors and Peers in an innovation lab"
     },
     {
       "id":4,
-      "imgsrc":"./src/assets/img/feature-card-img/feature-card-img-4.png",
+      "imgsrc":"./src/assets/img/feature-card-img/feature-card-img-4.svg",
       "title":"Gain Internship/Full Time Opportunities with Partner Orgs."
     },
     {
       "id":5,
-      "imgsrc":"./src/assets/img/feature-card-img/feature-card-img-5.png",
+      "imgsrc":"./src/assets/img/feature-card-img/feature-card-img-5.svg",
       "title":"In-depth Practice Based Learning with rigorous coursework"
     },
     {
       "id":6,
-      "imgsrc":"./src/assets/img/feature-card-img/feature-card-img-6.png",
+      "imgsrc":"./src/assets/img/feature-card-img/feature-card-img-6.svg",
       "title":"Accredited Certification of Tech Fellowship Program"
     }
   ];
@@ -112,21 +122,21 @@ function App() {
   const ProjectCards=[
     {
       "id":1,
-      "imgsrc":"./src/assets/img/projects-imgs/project-img-1.png",
+      "imgsrc":"./src/assets/img/projects-imgs/project-img-1.svg",
       "heading":"Build an Inventory Management System for Farmley",
       "para":"This project will demonstrate your skills in web development, database integration, and security.",
       "tags":["Springdata JPA","MySQL or PostgreSQL","Spring Security"]
     },
     {
       "id":2,
-      "imgsrc":"./src/assets/img/projects-imgs/project-img-2.png",
+      "imgsrc":"./src/assets/img/projects-imgs/project-img-2.svg",
       "heading":"Build an Customer Grievance Management System for Ship Rocket",
       "para":"We will develop a microservice for user authentication and management. Users can register, log in, and manage their profiles through this service.",
       "tags":["Microservice","Docker","Kubernetes"]
     },
     {
       "id":3,
-      "imgsrc":"./src/assets/img/projects-imgs/project-img-3.png",
+      "imgsrc":"./src/assets/img/projects-imgs/project-img-3.svg",
       "heading":"Built a Fleet Performance for Blue Smart",
       "para":"This project will demonstrate your skills in web development, microservices architecture, and cloud computing.",
       "tags":["Web Devlopment","Cloud Computing","Microservice Architecture"]
@@ -198,23 +208,23 @@ function App() {
   const GalleryCards=[
     {
       "id":1,
-      "imgsrc":"./src/assets/img/have-more-crousel-card-img/gallery-img-1.svg",
+      "imgsrc":"./src/assets/img/have-more-crousel-card-img/gallery-img-1.webp",
     },
     {
       "id":2,
-      "imgsrc":"./src/assets/img/have-more-crousel-card-img/gallery-img-2.svg",
+      "imgsrc":"./src/assets/img/have-more-crousel-card-img/gallery-img-2.webp",
     },
     {
       "id":3,
-      "imgsrc":"./src/assets/img/have-more-crousel-card-img/gallery-img-3.svg",
+      "imgsrc":"./src/assets/img/have-more-crousel-card-img/gallery-img-3.webp",
     },
     {
       "id":4,
-      "imgsrc":"./src/assets/img/have-more-crousel-card-img/gallery-img-4.svg",
+      "imgsrc":"./src/assets/img/have-more-crousel-card-img/gallery-img-4.webp",
     },
     {
       "id":5,
-      "imgsrc":"./src/assets/img/have-more-crousel-card-img/gallery-img-5.svg",
+      "imgsrc":"./src/assets/img/have-more-crousel-card-img/gallery-img-5.webp",
     }
   ]
 
@@ -330,27 +340,27 @@ function App() {
               <th>Tech Fellowship Program</th>
             </tr>
             <tr>
-              <td>No or Broken Mentorship </td>
-              <td>No 1:1 Mentorship </td>
-              <td>1:1 F2F Mentorship </td>
+              <td>No or Broken Mentorship</td>
+              <td>No 1:1 Mentorship</td>
+              <td>1:1 F2F Mentorship</td>
             </tr>
             <tr>
-              <td>No Industry Exposure </td>
-              <td>No Industry Exposure </td>
-              <td>Industry Exposure </td>
+              <td>No Industry Exposure</td>
+              <td>No Industry Exposure</td>
+              <td>Industry Exposure</td>
             </tr>
             <tr>
-              <td>Toy Projects </td>
+              <td>Toy Projects</td>
               <td>Toy Projects</td>
               <td>Real projects, MVPs, Hosted applications</td>
             </tr>
             <tr>
-              <td>1:1 F2F Mentorship </td>
+              <td>1:1 F2F Mentorship</td>
               <td>No Internships</td>
-              <td>Assured onsite Internships </td>
+              <td>Assured onsite Internships</td>
             </tr>
             <tr>
-              <td>No Peer Group Learning </td>
+              <td>No Peer Group Learning</td>
               <td>Little peer interaction</td>
               <td>In-built team with Product managers, UI experts, tech leads</td>
             </tr>
@@ -376,7 +386,7 @@ function App() {
             </tr>
             <tr>
               <td>Consistency Issues</td>
-              <td>Less Consistency Issues </td>
+              <td>Less Consistency Issues</td>
               <td>No consistency Issues, improved leadership and behavioral traits</td>
             </tr>
             <tr>

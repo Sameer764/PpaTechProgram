@@ -1,59 +1,67 @@
-.how-it-works-container{
-    max-width: 1193px;
+.how-it-works-container {
+    /* width: 82.85vw; */
     margin: 0 auto;
     display: flex;
     background: #F2F4FC;
-    padding: 60px;
-    border-radius: 20px;
-    gap: 60px;
+    padding: 4.167vw; /* 60px */
+    border-radius: 1.39vw; /* 20px */
+    gap: 4.17vw; /* 60px */
 }
-.how-it-works-left{
-    max-width: 670px;
+
+.how-it-works-left {
+    width: 46.528vw; /* 670px */
+    height: 31.042vw;
 }
-.how-it-works-left-img{
-    width: 100%;
+
+.how-it-works-left-img {
+    width: 46.528vw;
+    height: 31.042vw;
 }
-.selection-div,.give-interview-div,.admission-offer-div{
-    max-width: 463px;
-    padding: 20px 40px;
-    border-radius: 12px;
+.how-it-works-right{
+    width: 32.153vw;
+    height: 30.833vw;
 }
-.how-it-works-div-active{
+
+.selection-div, .give-interview-div, .admission-offer-div {
+    width: 32.15vw; /* 463px */
+    padding: 1.39vw 2.78vw; /* 20px 40px */
+    border-radius: 0.83vw; /* 12px */
+}
+
+.how-it-works-div-active {
     background: #FFFFFF;
 }
-.how-it-works-div-active h3{
-    /* color: ; */
+
+.how-it-works-div-active h3 {
     color: #3940A0;
-
 }
-.selection-div-para,.give-interview-div-para,.admission-offer-div-para{
-    margin-top: 8px;
-    /* //styleName: Paragraph/P2/Regular; */
+
+.selection-div-para, .give-interview-div-para, .admission-offer-div-para {
+    margin-top: 0.56vw; /* 8px */
     font-family: Gilroy-Regular;
-    font-size: 16px;
+    font-size: 1.11vw; /* 16px */
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.67vw; /* 24px */
     letter-spacing: 0.02em;
     text-align: left;
+}
 
-}
-.selection-div-heading,.give-interview-div-heading,.admission-offer-div-heading{
-    /* //styleName: Sub heading/H2/Bold; */
+.selection-div-heading, .give-interview-div-heading, .admission-offer-div-heading {
     font-family: Gilroy-Bold;
-    font-size: 20px;
+    font-size: 1.39vw; /* 20px */
     font-weight: 400;
-    line-height: 28px;
+    line-height: 1.94vw; /* 28px */
     letter-spacing: 0.02em;
     text-align: left;
 }
-.how-it-works-heading{
+
+.how-it-works-heading {
     text-align: center;
-    margin: 0px 0px 40px 0px;
-    /* //styleName: Heading/H1/Bold; */
+    margin: 0 0 2.78vw 0; /* 0px 0px 40px 0px */
     font-family: Gilroy-Bold;
-    font-size: 48px;
+    font-size: 3.33vw; /* 48px */
     font-weight: 400;
-    line-height: 64px;
+    line-height: 4.44vw; /* 64px */
     letter-spacing: 0.04em;
     text-align: center;
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import './OutlineCard.css'
+import './OutlineCardResponsive.css'
 
 function OutlineCard({id,title,imgsrcs,topics}) {
   return (

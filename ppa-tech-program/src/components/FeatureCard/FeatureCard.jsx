@@ -1,5 +1,6 @@
 import React from 'react'
 import './FeatureCard.css'
+import './FeatureResponsive.css'
 
 function FeatureCard({title,imgsrc,id}) {
   return (

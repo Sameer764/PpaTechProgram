@@ -17,23 +17,23 @@ function PricingCard({plantag,trainingduration,trainingprice,features}) {
         <h3 className='training-feature-heading'>{features}</h3>
         <ul className='training-features'>
             <li className='training-feature'>
-                <img src="./src/assets/img/pricing-plan-icon/pricing-card-tick.png" alt="pricing-card-tick" />
+                <img className='pricing-card-tick-img' src="./src/assets/img/pricing-plan-icon/pricing-card-tick.png" alt="pricing-card-tick" />
                 <p>Learn in a corporate ecosystem</p>
             </li>
             <li className='training-feature'>
-                <img src="./src/assets/img/pricing-plan-icon/pricing-card-tick.png" alt="pricing-card-tick" />
+                <img className='pricing-card-tick-img' src="./src/assets/img/pricing-plan-icon/pricing-card-tick.png" alt="pricing-card-tick" />
                 <p>Assured Paid Internships</p>
             </li>
             <li className='training-feature'>
-                <img src="./src/assets/img/pricing-plan-icon/pricing-card-tick.png" alt="pricing-card-tick" />
+                <img className='pricing-card-tick-img' src="./src/assets/img/pricing-plan-icon/pricing-card-tick.png" alt="pricing-card-tick" />
                 <p>In-depth Coursework</p>
             </li>
             <li className='training-feature'>
-                <img src="./src/assets/img/pricing-plan-icon/pricing-card-tick.png" alt="pricing-card-tick" />
+                <img className='pricing-card-tick-img' src="./src/assets/img/pricing-plan-icon/pricing-card-tick.png" alt="pricing-card-tick" />
                 <p>In-Person Full-time</p>
             </li>
             <li className='training-feature'>
-                <img src="./src/assets/img/pricing-plan-icon/pricing-card-tick.png" alt="pricing-card-tick" /> 
+                <img className='pricing-card-tick-img' src="./src/assets/img/pricing-plan-icon/pricing-card-tick.png" alt="pricing-card-tick" /> 
                 <p>Educational Aid Upto 40% Scholarships</p>
             </li>
         </ul>

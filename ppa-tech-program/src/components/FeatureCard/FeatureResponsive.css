@@ -1,0 +1,35 @@
+@media only screen and (max-width: 600px) {
+    .feature-heading{
+        font-size: 6.4vw;
+        line-height: 8.533vw;
+    }
+    .feature-para{
+        font-size: 4.267vw;
+        line-height: 6.4vw;
+        width: 100%;
+        letter-spacing: 0.4vw;
+        margin-top: 1.067vw;
+    }
+    .feature-card{
+        width: 89.333vw;
+        height: 90.667vw;
+        padding: 3.2vw;
+    }
+    .in-person-card-container{
+        margin-top: 2.133vw;
+        justify-content: center;
+    }
+    .feature-card{
+        margin-top: 3.2vw;
+        margin-bottom: 0vw;
+    }
+    .feature-card-heading{
+        margin-top: 3.2vw;
+        font-size: 5.333vw;
+        line-height: 7.467vw;
+    }
+    .div-center-btn{
+        padding: 0 3.067vw;
+        margin: 0;
+    }
+  }

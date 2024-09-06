@@ -75,6 +75,11 @@ function FaqAccordian() {
             <div className='faq-container' key={data.id}>
                 <div className="faq-item" onClick={()=>handleSingleSelection(data.id)}>
                     <h3 className='faq-ques'>{data.ques}</h3>
+                    {
+                        (selected===data.id) ?
+                        <img src="./src/assets/img/faq-icon/arrow-up.svg" alt="arrow-up" className='faq-icon'/>
+                        :<img src="./src/assets/img/faq-icon/arrow-down.svg" alt="arrow-down" className='faq-icon'/>
+                    }
                 </div>
                 {
                     (selected === data.id) ?

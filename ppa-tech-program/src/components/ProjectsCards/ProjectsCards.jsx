@@ -1,5 +1,6 @@
 import React from 'react'
 import './ProjectsCards.css'
+import './ProjectsCardsResponsive.css'
 
 function ProjectsCards({imgsrc,heading,para,tags}) {
   return (

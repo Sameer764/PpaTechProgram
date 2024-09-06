@@ -1,6 +1,7 @@
-.gallery-card{
-    width: 372px;
+.gallery-card {
+    width: 25.83vw; /* 372px */
 }
-.gallery-card-img{
+
+.gallery-card-img {
     width: 100%;
 }
