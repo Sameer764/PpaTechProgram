@@ -1,5 +1,6 @@
 import React from 'react'
 import './GalleryCard.css'
+import './GalleryResponsive.css'
 
 function GalleryCard({imgsrc}) {
   return (

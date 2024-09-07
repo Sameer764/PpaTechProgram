@@ -50,26 +50,34 @@
     .how-it-works-mobile .slick-prev:before {
         content: url('./src/assets/img/outline-icon/prev-arrow-icon.svg');
         position: absolute;
-        top: -60vw;
-        left: 72vw;
-        font-size: 7vw;
-        width: 8.533vw;
-        height: 8.533vw;
+        top: -61vw;
+        left: 68vw;
+        font-size: 5.5vw;
+        width: 7.533vw;
+        height: 7.533vw;
         background: #F8FAFC;
         border: 0.267vw solid #E2E8F0;
         border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.067vw;
     }
     .how-it-works-mobile .slick-next:before {
         content: url('./src/assets/img/outline-icon/next-arrow-icon.svg');
         position: absolute;
-        top: -60vw;
+        top: -61vw;
         right: 4vw;
-        font-size: 7vw;
-        width: 8.533vw;
-        height: 8.533vw;
+        font-size: 5.5vw;
+        width: 7.533vw;
+        height: 7.533vw;
         background: #F8FAFC;
         border: 0.267vw solid #E2E8F0;
         border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.067vw;
     }
     .how-it-works-mobile .slick-slider .slick-dots{
         margin-top: 2.133vw;

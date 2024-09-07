@@ -200,7 +200,9 @@
    border: none;
    cursor: pointer;
 }
-
+.why-tech-fellowship-program-table-mobile{
+   display: none;
+}
 .why-tech-fellowship-program-section {
    background: #F8FAFC;
    padding: 6.94vw 4.44vw; /* 100px 64px */
@@ -288,6 +290,8 @@ tr:nth-child(even) {
 }
 
 .talk-to-us-btn {
+   display: flex;
+   gap: 0.556vw;
    width: 12.29vw; /* 177px */
    padding: 1.11vw 2.22vw; /* 16px 32px */
    border-radius: 0.69vw; /* 10px */
@@ -302,9 +306,15 @@ tr:nth-child(even) {
    color: #FFFFFF;
    cursor: pointer;
 }
+.talk-to-us-btn img{
+   width: 1.667vw;
+   height: 1.667vw;
+}
 
 .talk-to-us-btn-div {
    margin-top: 4.17vw; /* 60px */
-   text-align: center;
+   /* text-align: center; */
+   display: flex;
+   justify-content: center;
 }
 

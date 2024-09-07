@@ -1,0 +1,44 @@
+@media only screen and (max-width: 600px) {
+    .have-more-questions{
+        padding: 16vw 0vw;
+    }
+    .have-more-heading{
+        font-size: 6.4vw;
+        font-weight: 400;
+        line-height: 8.533vw;
+        letter-spacing: 0.02em;
+        text-align: center;
+    }
+    .talk-to-us-btn{
+        width: 100%;
+        /* text-align: center; */
+        justify-content: center;
+        align-items: center;
+        border-radius: 2.667vw;
+        gap: 2.133vw;
+        margin: 5.333vw 5.333vw;
+    }
+    .talk-to-us-btn p{
+        font-size: 4.267vw;
+        font-weight: 400;
+        line-height: 6.4vw;
+        letter-spacing: 0.02em;
+    }
+    .talk-to-us-btn img{
+        width: 4.267vw;
+        height: 4.267vw;
+    }
+    .gallery-card{
+        width: 43.2vw;
+        height: 55.467vw;
+        border-radius: 3.2vw;
+    }
+    .have-more-crousel-container .slick-slide {
+        width: 43.2vw !important; /* 372px */
+        margin: 0 2,133vw; /* 8px */
+     }
+     .have-more-crousel-container{
+        margin-top: 10.667vw;
+     }
+}
+

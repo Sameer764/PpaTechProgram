@@ -1,0 +1,134 @@
+@media only screen and (max-width: 600px) {
+    .success-stories-section{
+        padding: 10.667vw 5.333vw;
+    }
+    .success-stories-heading{
+        font-size: 6.4vw;
+        font-weight: 400;
+        line-height: 8.533vw;
+        letter-spacing: 0.02em;
+        text-align: left;
+    }
+    .success-stories-card{
+        margin-top: 5.333vw;
+        width: 86.333vw;
+        height: 140vw;
+        padding: 5.333vw 4.267vw;
+        border-radius: 5.333vw;
+        border: 0.267vw solid #E2E8F0;
+    }
+    .success-stories-para{
+        margin-top: 4.267vw;
+        font-size: 4.267vw;
+        font-weight: 400;
+        line-height: 6.4vw;
+        letter-spacing: 0.02em;
+        text-align: center;
+    }
+    .quotation-img{
+        width: 12.8vw;
+        /* height: 100%; */
+        margin: 2.667vw 0vw;
+    }
+    .success-stories-div{
+        margin: 0;
+    }
+    .success-stories-student-img{
+        margin-top: 26.667vw;
+    }
+    .success-stories-student-img img{
+        width: 21.333vw;
+        height: 21.333vw;
+    }
+    .student-name{
+        margin-top: 3.2vw;
+    }
+    .student-name-text{
+        font-size: 4.267vw;
+        font-weight: 400;
+        line-height: 6.4vw;
+        letter-spacing: 0.02em;
+        text-align: center;
+    }
+    .linkedin-icon{
+        width: 5.333vw;
+        height: 5.333vw;
+    }
+    .student-profile{
+        margin-top: 2.133vw;
+    }
+    .student-role{
+        font-size: 4.267vw;
+        font-weight: 400;
+        line-height: 6.4vw;
+        letter-spacing: 0.02em;
+        text-align: center;
+    }
+    .company-icon{
+        width: 20vw;
+    }
+    .success-prev-arrow{
+        position: absolute;
+        top: -7.1vw;
+        left: 65vw;
+        background: #F8FAFC;
+        width: 8.533vw;
+        height: 8.533vw;
+        border-radius: 50%;
+        border: 0.179vw solid #E2E8F0;
+        display: flex !important;
+        justify-content: center;
+        padding-right: 0vw;
+        padding-bottom: 4vw;
+    }
+    .success-next-arrow{
+        position: absolute;
+        top: -7.1vw;
+        right: 0vw;
+        background: #F8FAFC;
+        width: 8.533vw;
+        height: 8.533vw;
+        border-radius: 50%;
+        border: 0.179vw solid #E2E8F0;
+        display: flex !important;
+        justify-content: center;
+        padding-right: 0vw;
+        padding-bottom: 4vw;
+    }
+    .success-prev-arrow img{
+        width: 2.765vw !important;
+        height: 4.267vw !important;
+        top: 2vw !important;
+        right: 1.8vw !important;
+    }
+    .success-next-arrow img{
+        width: 2.765vw !important;
+        height: 4.267vw !important;
+        top: 2vw !important;
+        right: 1.5vw !important;
+    }
+    .success-stories-card-container .slick-prev:before,.slick-next:before{
+        color: transparent;
+    }
+    .read-more-btn{
+        margin-top: 5.333vw;
+        width: 89.333vw;
+        padding: 4.267vw 8.533vw;
+        border-radius: 2.667vw;
+        font-size: 4.267vw;
+        font-weight: 400;
+        line-height: 6.4vw;
+        letter-spacing: 0.02em;
+    }
+}
+
+@media only screen and  (max-width: 400px){
+    .success-prev-arrow{
+        padding-right: 2vw;
+        padding-bottom: 4vw;
+    }
+    .success-next-arrow{
+        padding-right: 2vw;
+        padding-bottom: 4vw;
+    }
+}

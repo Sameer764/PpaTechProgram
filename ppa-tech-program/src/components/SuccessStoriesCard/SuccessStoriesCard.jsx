@@ -1,5 +1,6 @@
 import React from 'react'
 import "./SuccessStoriesCard.css"
+import "./SuccessStoriesResponsive.css"
 
 function SuccessStoriesCard({reviewtext,imgsrc,studentname,companylogo}) {
   return (

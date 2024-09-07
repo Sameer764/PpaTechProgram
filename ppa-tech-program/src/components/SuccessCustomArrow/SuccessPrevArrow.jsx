@@ -4,7 +4,7 @@ function SuccessPrevArrow(props) {
     const { className, style, onClick } = props;
     return (
       <div
-        className={className}
+        className={`${className} success-prev-arrow`}
         style={{ ...style}}
         onClick={onClick}
       >

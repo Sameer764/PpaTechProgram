@@ -4,7 +4,7 @@ function SuccessNextArrow(props) {
     const { className, style, onClick } = props;
     return (
       <div
-        className={className}
+        className={`${className} success-next-arrow`}
         style={{ ...style}}
         onClick={onClick}
       >

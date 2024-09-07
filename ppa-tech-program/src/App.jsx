@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './app.css'
+import './appresponsive.css'
 import Banner from "./components/Banner/Banner"
 import InPerson from "./components/InPerson/InPerson"
 import FeatureCard from './components/FeatureCard/FeatureCard';
@@ -41,6 +42,26 @@ function App() {
     intialSlide: 0,
     nextArrow: <SuccessNextArrow />,
     prevArrow: <SuccessPrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 0
+        }
+      }
+    ]
+
   };
   const settings3 = {
     // className:"success-arrow",
@@ -50,7 +71,26 @@ function App() {
     arrows:false,
     slidesToShow: 3,
     slidesToScroll: 1,
-    initialSlide: 0
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          intialSlide:0,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 0
+        }
+      }
+    ]
   };
   const FeatureCards=[
     {
@@ -396,6 +436,82 @@ function App() {
             </tr>
           </table>
         </div>
+        <div className="why-tech-fellowship-program-table-mobile">
+          <table>
+            <tr>
+              <th></th>
+              <th>Online</th>
+              <th>Classroom</th>
+              <th>TFP</th>
+            </tr>
+            <tr>
+              <td>1:1 F2F Mentorship</td>
+              <td><img src='./src/assets/img/tech-fellowship-table-icon/cross-icon.svg'/></td>
+              <td><img src='./src/assets/img/tech-fellowship-table-icon/cross-icon.svg'/></td>
+              <td><img src='./src/assets/img/tech-fellowship-table-icon/checked-icon.svg'/></td>
+            </tr>
+            <tr>
+              <td>Industry Exposure</td>
+              <td><img src='./src/assets/img/tech-fellowship-table-icon/cross-icon.svg'/></td>
+              <td><img src='./src/assets/img/tech-fellowship-table-icon/cross-icon.svg'/></td>
+              <td><img src='./src/assets/img/tech-fellowship-table-icon/checked-icon.svg'/></td>
+            </tr>
+            <tr>
+              <td>Real projects, MVPs, Hosted applications</td>
+              <td><img src='./src/assets/img/tech-fellowship-table-icon/cross-icon.svg'/></td>
+              <td><img src='./src/assets/img/tech-fellowship-table-icon/cross-icon.svg'/></td>
+              <td><img src='./src/assets/img/tech-fellowship-table-icon/checked-icon.svg'/></td>
+            </tr>
+            <tr>
+              <td>Assured Onsite Internships</td>
+              <td><img src='./src/assets/img/tech-fellowship-table-icon/cross-icon.svg'/></td>
+              <td><img src='./src/assets/img/tech-fellowship-table-icon/cross-icon.svg'/></td>
+              <td><img src='./src/assets/img/tech-fellowship-table-icon/checked-icon.svg'/></td>
+            </tr>
+            <tr>
+              <td>In-Built Team with Product Managers, UI Experts, Tech Leads</td>
+              <td><img src='./src/assets/img/tech-fellowship-table-icon/cross-icon.svg'/></td>
+              <td><img src='./src/assets/img/tech-fellowship-table-icon/cross-icon.svg'/></td>
+              <td><img src='./src/assets/img/tech-fellowship-table-icon/checked-icon.svg'/></td>
+            </tr>
+            <tr>
+              <td>Very High pace of learning</td>
+              <td><img src='./src/assets/img/tech-fellowship-table-icon/cross-icon.svg'/></td>
+              <td><img src='./src/assets/img/tech-fellowship-table-icon/cross-icon.svg'/></td>
+              <td><img src='./src/assets/img/tech-fellowship-table-icon/checked-icon.svg'/></td>
+            </tr>
+            <tr>
+              <td>Hyper-Personalised for you</td>
+              <td><img src='./src/assets/img/tech-fellowship-table-icon/cross-icon.svg'/></td>
+              <td><img src='./src/assets/img/tech-fellowship-table-icon/cross-icon.svg'/></td>
+              <td><img src='./src/assets/img/tech-fellowship-table-icon/checked-icon.svg'/></td>
+            </tr>
+            <tr>
+              <td>Corporate style Learn-as-you-work Ecosystem</td>
+              <td><img src='./src/assets/img/tech-fellowship-table-icon/cross-icon.svg'/></td>
+              <td><img src='./src/assets/img/tech-fellowship-table-icon/cross-icon.svg'/></td>
+              <td><img src='./src/assets/img/tech-fellowship-table-icon/checked-icon.svg'/></td>
+            </tr>
+            <tr>
+              <td>Fun while being disciplined </td>
+              <td><img src='./src/assets/img/tech-fellowship-table-icon/cross-icon.svg'/></td>
+              <td><img src='./src/assets/img/tech-fellowship-table-icon/cross-icon.svg'/></td>
+              <td><img src='./src/assets/img/tech-fellowship-table-icon/checked-icon.svg'/></td>
+            </tr>
+            <tr>
+              <td>No consistency Issues, improved leadership and behavioral traits</td>
+              <td><img src='./src/assets/img/tech-fellowship-table-icon/cross-icon.svg'/></td>
+              <td><img src='./src/assets/img/tech-fellowship-table-icon/cross-icon.svg'/></td>
+              <td><img src='./src/assets/img/tech-fellowship-table-icon/checked-icon.svg'/></td>
+            </tr>
+            <tr>
+              <td>Immersive Work Experience</td>
+              <td><img src='./src/assets/img/tech-fellowship-table-icon/cross-icon.svg'/></td>
+              <td><img src='./src/assets/img/tech-fellowship-table-icon/cross-icon.svg'/></td>
+              <td><img src='./src/assets/img/tech-fellowship-table-icon/checked-icon.svg'/></td>
+            </tr>
+          </table>
+        </div>
       </div>
       <div className="frequently-asked-question-section">
         <h2 className='frequently-asked-heading'>
@@ -406,7 +522,10 @@ function App() {
       <div className="have-more-questions">
         <h2 className="have-more-heading">Have more questions?</h2>
         <div className='talk-to-us-btn-div'>
-          <button className='talk-to-us-btn'>Talk to use</button>
+          <button className='talk-to-us-btn'>
+            <p>Talk to use</p>
+            <img src="./src/assets/img/have-more-crousel-card-img/whatsapp-icon.svg" alt="whatsapp-icon" />
+          </button>
         </div>
         <div className="have-more-crousel-container">
           <Slider {...settings3}>
