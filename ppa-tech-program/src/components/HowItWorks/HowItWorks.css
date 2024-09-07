@@ -21,6 +21,9 @@
     width: 32.153vw;
     height: 30.833vw;
 }
+.how-it-works-mobile{
+    display: none;
+}
 
 .selection-div, .give-interview-div, .admission-offer-div {
     width: 32.15vw; /* 463px */
