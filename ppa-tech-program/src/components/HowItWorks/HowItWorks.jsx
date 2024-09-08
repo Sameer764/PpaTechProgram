@@ -5,6 +5,8 @@ import "slick-carousel/slick/slick-theme.css";
 import { useState } from 'react'
 import './HowItWorks.css'
 import './HowItWorksMobile.css'
+import OutlineNextArrow from '../OutlineArrow/OutlineNextArrow';
+import OutlinePrevArrow from '../OutlineArrow/OutlinePrevArrow';
 
 function HowItWorks() {
     const [value,setValue]=useState(1);
@@ -17,7 +19,9 @@ function HowItWorks() {
         autoplay:true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        nextArrow: <OutlineNextArrow className={"outline-next-arrow"}/>,
+        prevArrow: <OutlinePrevArrow className={"outline-next-arrow"}/>,
       };
   return (
     <>
