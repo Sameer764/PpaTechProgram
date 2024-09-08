@@ -29,7 +29,27 @@ function App() {
     slidesToShow: 4,
     slidesToScroll: 1,
     nextArrow: <OutlineNextArrow className={"outline-next-arrow"}/>,
-    prevArrow: <OutlinePrevArrow className={"outline-next-arrow"}/>
+    prevArrow: <OutlinePrevArrow className={"outline-next-arrow"}/>,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          intialSlide:0,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 0,
+        }
+      }
+    ]
   };
   const settings2 = {
     className:"success-arrow",

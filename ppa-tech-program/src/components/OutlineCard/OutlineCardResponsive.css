@@ -3,21 +3,26 @@
         width: 82.667vw;
         height: 75.733vw;
         border-radius: 5.333vw;
+        margin-top: 5.333vw;
     }
     .card-icon-div{
         height: fit-content;
-        padding: 3.2vw 0vw;
+        padding: 3.7vw 0vw;
         border-radius: 5.333vw 5.333vw 0 0;
     }
     .card-icon{
-        width: 10.667vw;
-        height: 10.667vw;
+        width: 8.888vw;
+        height: 8.888vw;
     }
-    /* .program-outline-cards-container{
-        display: flex;
-    } */
+    .program-outline-container{
+        padding: 5.333vw 0vw 5.333vw 5.333vw;
+    }
     .program-outline-cards-container .slick-slide {
         width: 82.667vw !important;
+        /* margin-left: 2.133vw; */
+    }
+    .program-outline-cards-container .slick-track{
+        padding-left: 10px;
     }
     .program-outline-heading{
         font-size: 5.333vw;
@@ -32,6 +37,7 @@
         line-height: 7.467vw;
     }
     .card-outline-para{
+        margin-top: 1.067vw;
         font-size: 4.267vw;
         line-height: 6.4vw;
     }
@@ -44,13 +50,38 @@
     }
     .outline-card-arrow{
         top: -7.2vw !important;
-        width: 7.8vw !important;
-        height: 7.8vw !important;
+        width: 7.3vw !important;
+        height: 7.3vw !important;
     }
     .outline-card-arrow img{
-        left: 3vw !important;
+        width: 2.667vw !important;
+        left: 2.5vw !important;
     }
     .outline-prev-arrow{
         left: 72vw !important;
+    }
+    [data-index="1"] .outline-card-container{
+        margin-left: 2.133vw;
+    }
+    [data-index="1"].slick-active .outline-card-container{
+        margin-left: 9.133vw;
+    }
+    [data-index="2"] .outline-card-container{
+        margin-left: 11.133vw;
+    }
+    [data-index="2"].slick-active .outline-card-container{
+        margin-left: 20.133vw;
+    }
+    [data-index="3"] .outline-card-container{
+        margin-left: 22.133vw;
+    }
+    [data-index="3"].slick-active .outline-card-container{
+        margin-left: 30.133vw;
+    }
+    [data-index="4"] .outline-card-container{
+        margin-left: 32.133vw;
+    }
+    [data-index="4"].slick-active .outline-card-container{
+        margin-left: 43.133vw;
     }
   }
